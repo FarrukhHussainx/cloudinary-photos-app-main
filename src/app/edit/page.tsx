@@ -52,18 +52,6 @@ export default function EditPage({
               onChange={(e) => setPendingPrompt(e.currentTarget.value)}
             />
           </div>
-
-          <Button onClick={() => setTransformation("blur")}>Apply Blur</Button>
-          <Button onClick={() => setTransformation("grayscale")}>
-            Convert to Gray
-          </Button>
-          <Button onClick={() => setTransformation("pixelate")}>
-            Pixelate
-          </Button>
-
-          <Button onClick={() => setTransformation("bg-remove")}>
-            Remove Background
-          </Button>
         </div>
 
         <div className="grid grid-cols-2 gap-12">
@@ -105,7 +93,6 @@ export default function EditPage({
               src={publicId}
               width="1200"
               height="1400"
-              pixelate
               alt="some image"
             />
           )}
