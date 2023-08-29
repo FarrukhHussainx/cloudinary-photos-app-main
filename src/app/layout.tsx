@@ -8,6 +8,7 @@ import Link from "next/link";
 import cloudinary from "cloudinary";
 import { Folder } from "./albums/page";
 import Image from "next/image";
+import pg from "/public/album.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -115,12 +116,12 @@ export default function RootLayout({
         <div className="border-b">
           <div className="flex h-16 items-center px-4 container mx-auto">
             <Image
-              src="/album.png"
+              src={pg}
               width="50"
               height="50"
               alt="icon of this photo album app"
             />
-            WebDevCody Photos
+            Image Gallery
             <div className="ml-auto flex items-center space-x-4">
               <Avatar>
                 <AvatarImage
