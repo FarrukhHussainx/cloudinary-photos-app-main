@@ -96,7 +96,6 @@ export default function EditPage({
               src={publicId}
               width="1200"
               height="1400"
-              grayscale
               alt="some image"
             />
           )}
